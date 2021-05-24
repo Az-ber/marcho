@@ -162,6 +162,18 @@
   }
 }
 
+.top{
+  &__container{
+    max-width: 1700px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 120px 0 130px;
+    text-align: center;
+  }
+}
+
 .top-slider{
   background-image: url(../images/decor/top-slider-bg.png);
   background-repeat: no-repeat;
@@ -682,6 +694,66 @@
     padding-left: 40px;
     &:hover{
       color: $accent;
+    }
+  }
+}
+
+.modal{
+  padding-top: 100px;
+  max-width: 570px;
+  margin: 0 auto 115px;
+  &__links{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__link{
+    font-size: 22px;
+    color: #909090;
+    @extend %roboto-400;
+    text-transform: uppercase;
+    margin: 0 30px;
+    &:hover{
+      opacity: .6;
+    }
+  }
+  &__link--active{
+    color: $accent;
+  }
+  &__label{
+    margin-bottom: 30px;
+    display: block;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    margin-top: 4px;
+    height: 50px;
+    padding: 0 15px;
+    &:hover{
+      opacity: .6;
+    }
+  }
+  &__btn{
+    display: block;
+    background-color: $title;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 14px 0;
+    border: none;
+    cursor: pointer;
+    &:hover{
+      opacity: .8;
+    }
+  }
+  &__error{
+    margin-top: 12px;
+    color: $accent;
+    display: inline-block;
+    &:hover{
+      opacity: .6;
     }
   }
 }
