@@ -34,7 +34,8 @@ $bg: #f6f6f6;
     opacity: .8;
   }
 }
-%checkbox-hidden{
+%checkbox-hidden,
+%radio-hidden{
   height: 1px;
   width: 1px;
   overflow: hidden;
