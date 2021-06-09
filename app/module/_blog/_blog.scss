@@ -94,3 +94,42 @@
     }
   }
 }
+
+@media (max-width: 1230px){
+  .blog{
+    &__inner::before{
+      z-index: -1;
+    }
+    &__items{
+      &::after{
+        right: 0;
+      }
+    }
+  }
+  .blog-item:nth-child(3)::after{
+    right: 0;
+  }
+}
+
+@media (max-width: 1200px){
+  .blog{
+    padding: 60px 0;
+    &__items{
+      display: block;
+    }
+    .blog-item{
+      margin-bottom: 30px;
+      max-width: 100%;
+      &__action{
+        justify-content: start;
+        padding-left: 25px;
+      }
+      &__text{
+        padding-left: 20px;
+      }
+      &__link{
+        padding-left: 20px;
+      }
+    }
+  }
+}

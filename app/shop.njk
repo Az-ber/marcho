@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/shop.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -13,11 +14,34 @@
 
   <main class="main">
     
-    {% include 'app/module/_top/_top.html' %}
+    <section class="top">
+      <div class="top__container" style="background-image: url('images/top-bg.jpg');">
+        <div class="container">
+          <h2 class="top__title title">Shop</h2>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                  Home
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                  Shop
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="shop">
       <div class="container">
         <div class="shop__inner">
+        <button class="shop__filter-btn">
+          filter
+        </button>
           <div class="shop__filters filter">
             <div class="filter-search filter__item">
               <h3 class="filter-search__title filter__title">Search</h3>
